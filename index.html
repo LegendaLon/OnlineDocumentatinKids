@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script type="text/html" id="blockItemTemplate">
+        <div class="item">
+            <img src="image/blocks/${image}">
+            <div class="item-text">
+                <p class="title">${title}</p>
+                
+                {{if text}}
+
+                    <p>${text}</p>
+
+                {{/if}}
+
+                {{if description}}
+
+                    <p class="description" style="display: none;">${description}</p>
+
+                {{/if}}
+
+                {{if alert}}
+                    <!-- Якщо повідомлень немає не виводити список -->
+                    <p>
+                        <span class="alert">Увага</span>
+                        <ul class="alert-list">
+                            {{each alert}}
+                                <li class="red"><i class="bi bi-exclamation-circle"></i> ${$value}</li>
+                            {{/each}}
+                        </ul>
+                    </p>
+                {{/if}}
+            </div>
+        </div>
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">
+            Підказка
+        </h1>
+    </header>
+
+    <nav>
+        <div class="title">
+            План
+        </div>
+        <ul>
+            <li><a href="#programBlock">Program</a></li>
+            <li><a href="#pinsBlock">pins</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu">
+        Program
+        <div id="programBlock">
+
+        </div>
+
+        Pins
+        <div id="pinsBlock">
+
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js'></script>
+    <script src="javascript/massive.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
