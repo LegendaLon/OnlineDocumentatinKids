@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <script type="text/html" id="blockItemTemplate">
         <div class="item">
@@ -22,7 +26,7 @@
 
                 {{if description}}
 
-                    <p class="description" style="display: none;">${description}</p>
+                    <p class="description">${description}</p>
 
                 {{/if}}
 
@@ -32,7 +36,7 @@
                         <span class="alert">Увага</span>
                         <ul class="alert-list">
                             {{each alert}}
-                                <li class="red"><i class="bi bi-exclamation-circle"></i> ${$value}</li>
+                                <li class="red"><i class="bi bi-exclamation-circle red"></i> ${$value}</li>
                             {{/each}}
                         </ul>
                     </p>
@@ -43,35 +47,68 @@
 </head>
 <body>
 
+    <!-- Шапка -->
     <header>
         <h1 class="logo">
-            Підказка
+            Підказка по Ardublock
         </h1>
     </header>
-
+    
+    <!-- План -->
     <nav>
         <div class="title">
-            План
+            План сторінки:
         </div>
-        <ul>
+        <ul class="menu">
             <li><a href="#programBlock">Program</a></li>
-            <li><a href="#pinsBlock">pins</a></li>
+            <li><a href="#pinsBlock">Pins</a></li>
+            <li><a href="#mathoperatorsBlock">Math Operators</a></li>
         </ul>
     </nav>
 
-    <div class="menu">
-        Program
-        <div id="programBlock">
+    <!-- Блок контенка -->
+    <main>
+        <div class="menu">
+            <div class="group">
+                <div class="group-title">
+                    Program
+                </div>                
+                <div id="programBlock">
+
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-title">
+                    Pins 
+                </div>    
+                <div id="pinsBlock">
+
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="group-title">
+                    Math Operators 
+                </div>    
+                <div id="mathoperatorsBlock">
+
+                </div>
+            </div>
 
         </div>
+    </main>
 
-        Pins
-        <div id="pinsBlock">
-
+    <!-- Футер -->
+    <footer>
+        <div class="group">
+            <p>Цю сторінку створив Панчошний Дмитро</p>
+            <p>Для школи Robocode</p>
         </div>
-    </div>
-
-
+        <div class="group">
+            <p>Якщо ви знайшли помилку - потрібно повідомити розробнику.</p>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

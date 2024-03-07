@@ -1,0 +1,31 @@
+/* Navigation */
+nav {
+    grid-column: 2 / -2;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav div.title {
+    margin: 0 auto 6px auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul.menu {
+    margin: 0 auto 0 auto;
+}
+
+nav ul.menu li {
+
+}
+
+nav ul.menu li a {
+    font-size: 18px;
+}
+
+nav ul.menu li:hover {
+    transform: scale(1.1);
+    translate: 0.4s;
+}
