@@ -37,10 +37,10 @@
                 {{if alert}}
                     <!-- Якщо повідомлень немає не виводити список -->
                     <p>
-                        <span class="alert">Увага</span>
+                        <span class="alert">Увага:</span>
                         <ul class="alert-list">
                             {{each alert}}
-                                <li class="red"><i class="bi bi-exclamation-circle red"></i> ${$value}</li>
+                                <li class="alert-item"><i class="bi bi-exclamation-circle"></i> ${$value}</li>
                             {{/each}}
                         </ul>
                     </p>
