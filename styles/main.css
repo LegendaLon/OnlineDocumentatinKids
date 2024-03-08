@@ -82,7 +82,7 @@ main div.menu div.item div.item-text span.alert {
     align-self: center;
 }
 
-.bi {
+li.alert-item i.bi {
     color: red;
     font-size: 18px;
 }

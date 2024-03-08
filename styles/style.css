@@ -1,5 +1,6 @@
 /* Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root {
     --background: #F3F5F9;
@@ -11,7 +12,7 @@
     padding: 0;
     font-family: 'Montserrat';
     color: var(--text-color);
-    text-shadow: 0.4px 0.4px 2px var(--text-color);
+    text-shadow: 0.4px 0.4px 1.2px var(--text-color);
 }
 
 /* GLOBAL */

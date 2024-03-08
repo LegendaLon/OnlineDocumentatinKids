@@ -17,12 +17,12 @@ nav ul.menu {
     margin: 0 auto 0 auto;
 }
 
-nav ul.menu li {
-
-}
-
 nav ul.menu li a {
     font-size: 18px;
+}
+
+nav ul.menu li:hover i {
+    color: #1C373B;
 }
 
 nav ul.menu li:hover {
