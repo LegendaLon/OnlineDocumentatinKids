@@ -20,10 +20,12 @@ ul {
     list-style: none;
 }
 
+
 body {
     display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
     background-color: var(--background);
+    width: 100vw;
 }
 
 a {

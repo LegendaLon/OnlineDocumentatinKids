@@ -75,14 +75,14 @@ main div.menu div.item div.item-text span.alert {
 }
 
 
-.alert-item {
+main li.alert-item {
     color: red;
     text-shadow: 1px 1px 2px red;
     margin-top: 4px;
     align-self: center;
 }
 
-li.alert-item i.bi {
+main li.alert-item i.bi {
     color: red;
     font-size: 18px;
 }
