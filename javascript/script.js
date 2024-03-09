@@ -1,13 +1,30 @@
-$(() => {
-  // Отрисовка блоков
-  $('#blockItemTemplate').tmpl(BlockData.control).appendTo('#controlBlocksContainer');
+let blocks = [
+  {
+    title: "DocumantationBlock",
+    block: $('div.container#DocumantationBlock'),
+  },
 
-  // Отрисовка блоков
-  $('#blockItemTemplate').tmpl(BlockData.pins).appendTo('#pinsBlock');
+  {
+    title: "DocumantationLeo",
+    block: $("div.container#DocumantationLeo"),
+  },
 
-  // Отрисовка блоков
-  $('#blockItemTemplate').tmpl(BlockData.mathoperators).appendTo('#mathoperatorsBlock');
+  {
+    title: "Example",
+    block: $('div.container#Example')
+  }
+]
 
-  // Отрисовка блоков
-  $('#blockItemTemplate').tmpl(BlockData.generichardware).appendTo('#generichardwareBlock');
+function changeVisibleBlock (titleblock) {
+  blocks.forEach((item, index) => {
+    if (item.title == titleblock) {
+      item.block.show();
+    } else {
+      item.block.hide();
+    }
+  });
+}
+
+$('button.link').on('click', function () {
+  changeVisibleBlock($(this).attr('go-to'));
 })

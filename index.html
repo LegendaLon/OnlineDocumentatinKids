@@ -56,52 +56,75 @@
         <h1 class="logo">
             Підказка по Ardublock
         </h1>
+        <ul class="menu">
+            <li class="item">
+                <button class="link" go-to="DocumantationBlock">Блоки Ardublock</button>
+            </li>
+            <li class="item">
+                <button class="link" go-to="DocumantationLeo">Інструкція до Leo6</button>
+            </li>
+            <li class="item">
+                <button class="link" go-to="Example">Приклади</button>
+            </li>
+        </ul>
     </header>
     
-    <!-- План -->
-    <nav>
-        <div class="title">
-            План сторінки:
-        </div>
-        <ul class="menu">
-            <li><a href="#controlBlocksContainer"><i class="bi bi-arrow-right-short"></i>Control</a></li>
-            <li><a href="#pinsBlock"><i class="bi bi-arrow-right-short"></i>Pins</a></li>
-            <li><a href="#mathoperatorsBlock"><i class="bi bi-arrow-right-short"></i>Math Operators</a></li>
-            <li><a href="#generichardwareBlock"><i class="bi bi-arrow-right-short"></i>Generic Hardware</a></li>
-        </ul>
-    </nav>
-
     <!-- Блок контенка -->
-    <main id="BlockDocumantation">
-        <div class="menu">
-            <div class="group">
-                <div class="group-title">
-                    Control
-                </div>                
-                <div id="controlBlocksContainer"></div>
-            </div>
+    <main>
+        <div class="container" id="DocumantationBlock">
 
-            <div class="group">
-                <div class="group-title">
-                    Pins 
-                </div>    
-                <div id="pinsBlock"></div>
-            </div>
+            <!-- План -->
+            <nav>
+                <div class="title">
+                    План сторінки:
+                </div>
+                <ul class="menu">
+                    <li><a href="#controlBlocksContainer"><i class="bi bi-arrow-right-short"></i>Control</a></li>
+                    <li><a href="#pinsBlocksContainer"><i class="bi bi-arrow-right-short"></i>Pins</a></li>
+                    <li><a href="#mathoperatorsBlocksContainer"><i class="bi bi-arrow-right-short"></i>Math Operators</a></li>
+                    <li><a href="#generichardwareBlocksContainer"><i class="bi bi-arrow-right-short"></i>Generic Hardware</a></li>
+                </ul>
+            </nav>
 
-            <div class="group">
-                <div class="group-title">
-                    Math Operators 
-                </div>    
-                <div id="mathoperatorsBlock"></div>
-            </div>
 
-            <div class="group">
-                <div class="group-title">
-                    Generic Hardware
-                </div>    
-                <div id="generichardwareBlock"></div>
-            </div>
+            <div class="menu">
+                <div class="group">
+                    <div class="group-title">
+                        Control
+                    </div>                
+                    <div id="controlBlocksContainer"></div>
+                </div>
 
+                <div class="group">
+                    <div class="group-title">
+                        Pins 
+                    </div>    
+                    <div id="pinsBlocksContainer"></div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        Math Operators 
+                    </div>    
+                    <div id="mathoperatorsBlocksContainer"></div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        Generic Hardware
+                    </div>    
+                    <div id="generichardwareBlocksContainer"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container none" id="DocumantationLeo">
+            <h1 class="alert-message">Ця строніка ще в розробці!</h1>
+        </div>
+
+        <div class="container none" id="Example">
+            <h1 class="alert-message">Ця строніка ще в розробці!</h1>
         </div>
     </main>
 
@@ -123,6 +146,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src='http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js'></script>
     <script src="javascript/massive.js"></script>
+    <script src="javascript/render.js"></script>
     <script src="javascript/script.js"></script>
 </body>
 </html>

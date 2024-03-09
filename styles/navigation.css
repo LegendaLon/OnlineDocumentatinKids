@@ -22,7 +22,7 @@ nav ul.menu li a {
 }
 
 nav ul.menu li:hover i {
-    color: #1C373B;
+    color: var(--text-dark);
 }
 
 nav ul.menu li:hover {

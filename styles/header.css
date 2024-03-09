@@ -1,14 +1,38 @@
 /* HEADER */
 header {
-    height: 10vh;
-    margin: 0 auto 0 auto;
+    max-height: 10vh;
+    margin: 0 auto 50px auto;
     grid-column: 1 / -1;
     display: flex;
     flex-direction: row;
+
+    width: 80%;
 }
 
 header h1.logo {
     padding: 10px 18px;
     font-size: 24px;
     font-weight: bold;
+    width: max-content;
+}
+
+header ul.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+header ul.menu li.item {
+    margin: 0 auto 0 auto;
+}
+
+header ul.menu button {
+    border: none;
+    background-color: inherit;
+}
+
+header ul.menu button:hover {
+    color: var(--text-dark);
+    cursor: pointer;
 }
