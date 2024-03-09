@@ -1,6 +1,6 @@
 $(() => {
   // Отрисовка блоков
-  $('#blockItemTemplate').tmpl(BlockData.program).appendTo('#contorlBlock');
+  $('#blockItemTemplate').tmpl(BlockData.program).appendTo('#controlBlock');
 
   // Отрисовка блоков
   $('#blockItemTemplate').tmpl(BlockData.pins).appendTo('#pinsBlock');
