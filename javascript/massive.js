@@ -1,5 +1,5 @@
 let BlockData = {
-  "program": [
+  "control": [
     {
       title: 'Головний блок',
       image: 'program.png',
